@@ -1,0 +1,51 @@
+:root {
+    /* Colors */
+    --color-primary: #ED1C24; /* UEF Red */
+    --color-primary-dark: #C9151B;
+    --color-secondary: #004F9F; /* UEF Blue typically, or a dark blue */
+    --color-dark: #1F2937;
+    --color-gray: #6B7280;
+    --color-light-gray: #F3F4F6;
+    --color-white: #FFFFFF;
+    --color-accent: #F59E0B; /* Yellow/Gold for badges */
+    
+    /* Typography */
+    --font-family: 'Be Vietnam Pro', sans-serif;
+    --font-size-base: 16px;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --font-weight-extrabold: 800;
+
+    /* Spacing */
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 32px;
+    --spacing-2xl: 48px;
+    --spacing-3xl: 64px;
+
+    /* Border Radius */
+    --border-radius-sm: 4px;
+    --border-radius-md: 8px;
+    --border-radius-lg: 12px;
+    --border-radius-pill: 9999px;
+
+    /* Shadows */
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+
+    /* Transitions */
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
+}
+
+/* Breakpoints */
+@custom-media --viewport-sm (min-width: 576px);
+@custom-media --viewport-md (min-width: 768px);
+@custom-media --viewport-lg (min-width: 992px);
+@custom-media --viewport-xl (min-width: 1200px);
+@custom-media --viewport-2xl (min-width: 1440px);
