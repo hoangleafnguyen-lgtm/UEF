@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <title>Xét Học Bổng Sớm 2026 - UEF</title>
+    <meta name="description" content="Đăng ký xét học bổng sớm tại Đại học Kinh tế Tài chính TP.HCM (UEF) dành cho học sinh 2K9.">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Xét Học Bổng Sớm 2026 - UEF">
+    <meta property="og:description" content="Đăng ký xét học bổng sớm tại Đại học Kinh tế Tài chính TP.HCM (UEF) dành cho học sinh 2K9.">
+    <meta property="og:image" content="assets/hinh 1.jpg">
+    <meta property="og:url" content="https://xettuyenhocbong.uef.edu.vn">
+
+    <!-- Fonts: Be Vietnam Pro -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/sections.css">
+
+    <!-- GA4 Placeholder -->
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX'); // Placeholder
+    </script>
+</head>
+<body>
+    <!-- BACKGROUND WAVES (PARALLAX) -->
+    <div class="parallax-bg" aria-hidden="true">
+        <svg class="wave wave-blue" viewBox="0 0 1440 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,0 L1440,0 L1440,300 Q1000,800 500,400 T0,700 Z" fill="#E6F2FC" />
+            <path d="M1440,0 L1440,600 Q1200,900 800,500 T1440,200" fill="#00AEEF" opacity="0.1" />
+        </svg>
+        <svg class="wave wave-red" viewBox="0 0 1440 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,800 L1440,800 L1440,600 Q1000,200 400,500 T0,400 Z" fill="#ED1C24" opacity="0.9" />
+        </svg>
+    </div>
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="site-header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="#hero" aria-label="Trang chủ UEF">
+                    <img src="brand/logo-truong-2023-09-29.png" alt="UEF Logo">
+                </a>
+            </div>
+            <nav class="main-nav" aria-label="Điều hướng chính">
+                <ul>
+                    <li><a href="#hoc-bong">Thông tin Học bổng</a></li>
+                </ul>
+            </nav>
+            <div class="header-cta">
+                <a href="#register-form" class="btn btn-outline-primary">Đăng ký xét học bổng <i class="fa-solid fa-arrow-right ml-xs" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- SECTION 1: HERO -->
+        <section class="hero-section" id="hero">
+            <div class="container hero-container">
+                <!-- Left Content -->
+                <div class="hero-content">
+                    <span class="eyebrow hero-eyebrow">HÀNH TRÌNH ĐẦY CẢM XÚC</span>
+                    <h1 class="headline hero-headline">Bắt đầu từ những bước đầu tiên</h1>
+                    <p class="description hero-desc">
+                        Tuổi 18, bạn không cần biết hết mọi câu trả lời. Chỉ cần bắt đầu từ một điểm xuất phát phù hợp.
+                    </p>
+                    <blockquote class="hero-quote">
+                        <span class="hero-quote-mark" aria-hidden="true">“</span>
+                        <p class="hero-quote-text">
+                            <strong>UEF đồng hành cùng 2K9</strong> trên hành trình chọn ngành, tích luỹ tri thức, trải nghiệm đại học và từng bước trưởng thành.
+                        </p>
+                    </blockquote>
+                    
+                    <!-- Center Model Preview on Desktop -->
+                    <div class="hero-model-wrap">
+                        <img src="assets/model-nu.png" alt="Sinh viên UEF" class="hero-model-img" loading="eager">
+                    </div>
+                </div>
+
+                <!-- Right Form -->
+                <div class="hero-form-wrapper" id="register-form">
+                    <div class="form-card">
+                        <h2 class="form-headline">Đăng ký xét học bổng UEF</h2>
+                        <p class="form-description">Điền thông tin để UEF tư vấn lộ trình phù hợp.</p>
+
+                        <form id="lead-form" novalidate>
+                            <div class="form-group input-with-icon">
+                                <i class="fa-regular fa-user input-icon" aria-hidden="true"></i>
+                                <input type="text" id="fullname" name="fullname" placeholder="Họ và tên" required aria-label="Họ và tên">
+                            </div>
+                            <div class="form-group input-with-icon">
+                                <i class="fa-solid fa-phone input-icon" aria-hidden="true"></i>
+                                <input type="tel" id="phone" name="phone" placeholder="Số điện thoại" required pattern="[0-9]{10}" aria-label="Số điện thoại">
+                                <span class="error-msg" id="phone-error">Số điện thoại không hợp lệ (10 chữ số bắt đầu bằng 0)</span>
+                            </div>
+                            <div class="form-group input-with-icon">
+                                <i class="fa-solid fa-school input-icon" aria-hidden="true"></i>
+                                <input type="text" id="highschool" name="highschool" placeholder="Trường THPT" required aria-label="Trường THPT">
+                            </div>
+                            <div class="form-group input-with-icon">
+                                <i class="fa-solid fa-location-dot input-icon" aria-hidden="true"></i>
+                                <select id="province" name="province" required aria-label="Tỉnh hoặc Thành phố">
+                                    <option value="" disabled selected>Chọn tỉnh / thành phố</option>
+                                    <option value="HCM">TP. Hồ Chí Minh</option>
+                                    <option value="HN">Hà Nội</option>
+                                    <option value="DN">Đà Nẵng</option>
+                                    <option value="BD">Bình Dương</option>
+                                    <option value="DNA">Đồng Nai</option>
+                                    <option value="BRVT">Bà Rịa - Vũng Tàu</option>
+                                    <option value="LA">Long An</option>
+                                    <option value="TG">Tiền Giang</option>
+                                    <option value="CT">Cần Thơ</option>
+                                    <option value="TN">Tây Ninh</option>
+                                    <option value="OTHER">Tỉnh/Thành khác</option>
+                                </select>
+                            </div>
+                            <div class="form-checkbox">
+                                <input type="checkbox" id="agree" name="agree" required>
+                                <label for="agree">Tôi đồng ý với <a href="#" target="_blank" rel="noopener">chính sách bảo mật</a> của UEF</label>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-submit-red">ĐĂNG KÝ XÉT HỌC BỔNG <i class="fa-solid fa-arrow-right ml-xs" aria-hidden="true"></i></button>
+                            <div id="form-success-msg" class="form-success-banner" style="display: none;" role="alert"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3 Pill điều hướng ngang dưới hero -->
+            <div class="hero-pills-bar">
+                <div class="container hero-pills-container">
+                    <a href="#hoc-bong" class="hero-pill-btn">
+                        <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+                        <span>Học bổng và tài chính</span>
+                        <i class="fa-solid fa-arrow-right pill-arrow" aria-hidden="true"></i>
+                    </a>
+                    <a href="#chon-nganh" class="hero-pill-btn">
+                        <i class="fa-regular fa-compass" aria-hidden="true"></i>
+                        <span>Ngành học phù hợp</span>
+                        <i class="fa-solid fa-arrow-right pill-arrow" aria-hidden="true"></i>
+                    </a>
+                    <a href="#hanh-trinh" class="hero-pill-btn">
+                        <i class="fa-solid fa-users" aria-hidden="true"></i>
+                        <span>Cuộc sống đại học</span>
+                        <i class="fa-solid fa-arrow-right pill-arrow" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: LỢI THẾ KHI ĐĂNG KÝ HỌC BỔNG SỚM -->
+        <section class="section-padding section-scholarship" id="hoc-bong">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-headline">Bắt đầu sớm để vững tâm hơn trên hành trình đại học</h2>
+                    <p class="section-description">Học bổng là điểm tựa tài chính thêm lợi thế cho hành trình tương lai.</p>
+                </div>
+
+                <!-- 5 Loại Học Bổng -->
+                <div class="scholarship-grid">
+                    <div class="benefit-card">
+                        <div class="benefit-icon-wrapper">
+                            <svg class="benefit-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                                <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                            </svg>
+                        </div>
+                        <h3 class="benefit-title">Học bổng tuyển sinh</h3>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon-wrapper">
+                            <svg class="benefit-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                            </svg>
+                        </div>
+                        <h3 class="benefit-title">Học bổng doanh nghiệp</h3>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon-wrapper">
+                            <svg class="benefit-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                            </svg>
+                        </div>
+                        <h3 class="benefit-title">Học bổng tài năng</h3>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon-wrapper">
+                            <svg class="benefit-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                            </svg>
+                        </div>
+                        <h3 class="benefit-title">Học bổng giáo dục</h3>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon-wrapper">
+                            <svg class="benefit-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                            </svg>
+                        </div>
+                        <h3 class="benefit-title">Học bổng gia đình</h3>
+                    </div>
+                </div>
+
+                <!-- 3 Mức Học Bổng Nổi Bật -->
+                <div class="scholarship-levels-section mt-2xl text-center">
+                    <h3 class="section-lead-question">2K9 có cơ hội nhận các học bổng nào từ UEF?</h3>
+                    <div class="scholarship-levels-bar mt-md">
+                        <div class="scholarship-level-item">
+                            <span class="level-percent">25%</span>
+                            <span class="level-label">Học bổng 25%</span>
+                        </div>
+                        <div class="scholarship-level-item">
+                            <span class="level-percent">50%</span>
+                            <span class="level-label">Học bổng 50%</span>
+                        </div>
+                        <div class="scholarship-level-item highlight-item">
+                            <span class="level-percent">100%</span>
+                            <span class="level-label">Học bổng 100%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nút Show More Bảng Học Bổng -->
+                <div class="text-center mt-xl">
+                    <button type="button" class="btn btn-toggle-table" id="toggle-scholarship-table-btn" aria-expanded="false" aria-controls="scholarship-table-wrapper">
+                        <span>Show more bảng học bổng</span>
+                        <i class="fa-solid fa-chevron-down toggle-icon" aria-hidden="true"></i>
+                    </button>
+                </div>
+
+                <!-- Bảng Học Bổng Chi Tiết (Collapsible) -->
+                <div class="scholarship-table-wrapper" id="scholarship-table-wrapper" style="display: none;">
+                    <div class="table-responsive">
+                        <table class="scholarship-table">
+                            <thead>
+                                <tr>
+                                    <th>Mức học bổng</th>
+                                    <th>Xét học bạ THPT (*)</th>
+                                    <th>Điểm thi tốt nghiệp THPT<br><small>(Tổng điểm 3 môn)</small></th>
+                                    <th>IELTS</th>
+                                    <th>V-SAT<br><small>(Tổng điểm 450)</small></th>
+                                    <th>Điều kiện duy trì mỗi năm<br><small>(Thang điểm 4.0)</small></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="badge-col"><span class="badge-rate rate-25">25%</span></td>
+                                    <td>20 đến dưới 25</td>
+                                    <td>20 đến dưới 24</td>
+                                    <td>5.5 đến 6.0</td>
+                                    <td>315 đến dưới 360</td>
+                                    <td>Điểm TB tích lũy mỗi năm đạt từ 3.2; điểm đánh giá rèn luyện năm học ≥ 65</td>
+                                </tr>
+                                <tr>
+                                    <td class="badge-col"><span class="badge-rate rate-50">50%</span></td>
+                                    <td>25 đến dưới 28.5</td>
+                                    <td>24 đến dưới 27</td>
+                                    <td>6.5 đến 7.5</td>
+                                    <td>360 đến dưới 405</td>
+                                    <td>Điểm TB tích lũy mỗi năm đạt từ 3.4. Từ 3.2 đến dưới 3.4 nhận học bổng 25%; điểm đánh giá rèn luyện năm học ≥ 65</td>
+                                </tr>
+                                <tr class="highlight-row">
+                                    <td class="badge-col"><span class="badge-rate rate-100">100%</span></td>
+                                    <td>28.5 đến 30</td>
+                                    <td>27 đến 30</td>
+                                    <td>8.0 trở lên</td>
+                                    <td>405 đến 450</td>
+                                    <td>Điểm TB tích lũy mỗi năm đạt từ 3.6. Từ 3.4 đến dưới 3.6 nhận học bổng 50%; từ 3.2 đến dưới 3.4 nhận học bổng 25%; điểm đánh giá rèn luyện năm học ≥ 65</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: CHỦ ĐỘNG CHỌN NGÀNH -->
+        <section class="section-padding section-major" id="chon-nganh">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-headline">2K9 với những bước đầu tiên của hành trình đại học</h2>
+                    <p class="section-description">Bắt đầu bằng một lựa chọn, trưởng thành bằng cả một hành trình.</p>
+                    <p class="section-lead-highlight mt-sm">Lựa chọn chương trình Song ngữ - Quốc tế tại UEF 2K9 sẵn sàng với nền tri thức cho sự nghiệp toàn cầu.</p>
+                </div>
+
+                <!-- 2 Chỉ số nổi bật -->
+                <div class="stats-wrapper">
+                    <div class="stat-card">
+                        <div class="stat-number">46</div>
+                        <div class="stat-label">chương trình đào tạo</div>
+                    </div>
+                    <div class="stat-divider" aria-hidden="true"></div>
+                    <div class="stat-card">
+                        <div class="stat-number">3</div>
+                        <div class="stat-label">phương thức xét tuyển</div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-xl mb-lg">
+                    <h3 class="sub-headline">Chương trình học đáp ứng nhu cầu thực tiễn</h3>
+                </div>
+
+                <!-- 4 Major Cards -->
+                <div class="major-grid">
+                    <div class="major-card">
+                        <div class="major-card-inner">
+                            <h4 class="major-card-title">Chuẩn quốc tế:</h4>
+                            <p class="major-card-desc">Định hướng International University, Global Career.</p>
+                        </div>
+                    </div>
+
+                    <div class="major-card">
+                        <div class="major-card-inner">
+                            <h4 class="major-card-title">Học cho kỷ nguyên số:</h4>
+                            <p class="major-card-desc">Kiến thức số, dữ liệu và công nghệ được lồng vào từng ngành học.</p>
+                        </div>
+                    </div>
+
+                    <div class="major-card">
+                        <div class="major-card-inner">
+                            <h4 class="major-card-title">Học đi đôi với làm:</h4>
+                            <p class="major-card-desc">Dự án thực tế, kiến tập và thực tập cùng doanh nghiệp đối tác.</p>
+                        </div>
+                    </div>
+
+                    <div class="major-card">
+                        <div class="major-card-inner">
+                            <h4 class="major-card-title">Tiếng Anh là lợi thế:</h4>
+                            <p class="major-card-desc">chương trình song ngữ, sẵn sàng cho môi trường toàn cầu.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 4: HÀNH TRÌNH HỌC ĐẠI HỌC (MILESTONE JOURNEY STRIP) -->
+        <section class="section-padding journey-section" id="hanh-trinh">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-headline">4 năm tại UEF - Một hành trình, nhiều cột mốc đáng nhớ</h2>
+                    <p class="section-lead-highlight" style="font-size: 1.125rem;">Hành trình 4 năm mở ra nhiều phiên bản tương lai</p>
+                    <p class="section-description">Kết nối cộng đồng, tìm ra các kỹ năng mới của bản thân, thoải mái thể hiện chất riêng. Khám phá hành trình học tập, hoạt động sinh viên cùng những cơ hội để 2K9 là chính mình tại UEF.</p>
+                </div>
+
+                <!-- (2) Dải ngang milestone -->
+                <div class="journey-strip-container">
+                    <div class="journey-track" aria-hidden="true">
+                        <div class="journey-progress-fill" id="journey-progress-bar"></div>
+                    </div>
+                    <div class="journey-nodes" id="journey-nodes-list" role="tablist" aria-label="Hành trình 4 năm">
+                        <!-- Rendered by JS from YEAR_DETAILS -->
+                    </div>
+                </div>
+
+                <!-- (3) Khung chi tiết -->
+                <div class="journey-panel-wrapper">
+                    <div class="journey-panel-arrow" id="journey-panel-arrow" aria-hidden="true"></div>
+                    <div class="journey-panel" id="journey-panel" aria-live="polite">
+                        <!-- Rendered dynamically by JS -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 5: MÔI TRƯỜNG CHUẨN QUỐC TẾ & TRUYỀN CẢM HỨNG -->
+        <section class="section-padding section-environment" id="moi-truong">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-headline">Ở UEF, bạn không trưởng thành một mình</h2>
+                    <p class="section-description">Những người thầy tận tâm, những người bạn cùng chí hướng và hàng trăm khoảnh khắc đáng nhớ.</p>
+                </div>
+
+                <!-- Lưới 2x2 khối media -->
+                <div class="environment-grid" id="environment-grid">
+                    <!-- Rendered by JS from VIDEO_SECTION_5_DATA -->
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 6: TESTIMONIAL & VIDEO CHIA SẺ -->
+        <section class="section-padding section-testimonial" id="cam-nhan">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-headline">Chúng mình đã chọn UEF, bạn thì sao?</h2>
+                    <p class="section-description">Hãy bắt đầu từ một lựa chọn đúng</p>
+                </div>
+
+                <!-- Featured Highlight Video -->
+                <div class="featured-video-wrapper">
+                    <div class="featured-video-card" id="featured-testimonial-video" role="button" tabindex="0" aria-label="Xem video chia sẻ từ sinh viên UEF">
+                        <img src="assets/hinh 4.jpg" alt="Video chia sẻ sinh viên UEF" class="featured-video-thumb">
+                        <div class="featured-play-btn" aria-hidden="true">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="featured-video-overlay">
+                            <span class="badge featured-badge"><i class="fa-brands fa-youtube" aria-hidden="true"></i> VIDEO NỔI BẬT</span>
+                            <h3 class="featured-video-title">Hành trình thanh xuân rực rỡ tại mái nhà UEF</h3>
+                            <p class="featured-video-sub">Lắng nghe những câu chuyện chân thực nhất từ các bạn sinh viên</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4 Testimonial Quote Cards Grid -->
+                <div class="testimonials-quote-grid mt-2xl">
+                    <!-- Quote 1 -->
+                    <div class="testimonial-quote-card">
+                        <div class="quote-icon" aria-hidden="true">“</div>
+                        <p class="quote-text">
+                            Bản thân em đặc biệt ấn tượng với môi trường học tập hiện đại, các hoạt động quốc tế đa dạng cùng cách UEF tương tác, đồng hành với học sinh trong suốt quá trình tìm hiểu thông tin tuyển sinh. Suất học bổng này giúp em tự tin hơn và cũng là động lực để em đặt nguyện vọng vào UEF.
+                        </p>
+                        <div class="quote-author-info">
+                            <div class="author-avatar"><i class="fa-solid fa-user-graduate" aria-hidden="true"></i></div>
+                            <div>
+                                <h4 class="author-name">Nguyễn Lê Anh Thư</h4>
+                                <p class="author-desc">học sinh Trường THPT Chuyên Hoàng Lê Kha (Tây Ninh)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quote 2 -->
+                    <div class="testimonial-quote-card">
+                        <div class="quote-icon" aria-hidden="true">“</div>
+                        <p class="quote-text">
+                            Em cảm thấy đây là cơ hội để mình được tiếp cận môi trường học tập năng động, sáng tạo và có nhiều cơ hội phát triển như UEF. Khi nhận được học bổng, em có thêm động lực để đăng ký xét tuyển vào trường sau kỳ thi tốt nghiệp
+                        </p>
+                        <div class="quote-author-info">
+                            <div class="author-avatar"><i class="fa-solid fa-user-graduate" aria-hidden="true"></i></div>
+                            <div>
+                                <h4 class="author-name">Ngô Gia Bảo</h4>
+                                <p class="author-desc">học sinh Trường THPT Đồng Xoài (Đồng Nai)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quote 3 -->
+                    <div class="testimonial-quote-card">
+                        <div class="quote-icon" aria-hidden="true">“</div>
+                        <p class="quote-text">
+                            Điều quý giá nhất đại học mang lại không phải là tấm bằng tốt nghiệp mà là một phiên bản trưởng thành hơn, bản lĩnh hơn và hiểu rõ mình muốn trở thành ai.
+                        </p>
+                        <div class="quote-author-info">
+                            <div class="author-avatar"><i class="fa-solid fa-award" aria-hidden="true"></i></div>
+                            <div>
+                                <h4 class="author-name">Nguyễn Lương Anh Tuấn</h4>
+                                <p class="author-desc">Tân cử nhân ngành Marketing</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quote 4 -->
+                    <div class="testimonial-quote-card">
+                        <div class="quote-icon" aria-hidden="true">“</div>
+                        <p class="quote-text">
+                            Hân tuổi 18 ơi, cậu đừng lo lắng nhé! Nhờ sự dấn thân không ngừng nghỉ ấy, Huỳnh Ngọc Hân của tuổi 22 đã trở thành một bản thể tự tin, kiên cường và đầy nhiệt huyết. Cậu không chỉ hoàn thành xuất sắc chặng đường học tập mà còn có một phần thanh xuân rực rỡ tại mái nhà UEF.
+                        </p>
+                        <div class="quote-author-info">
+                            <div class="author-avatar"><i class="fa-solid fa-award" aria-hidden="true"></i></div>
+                            <div>
+                                <h4 class="author-name">Huỳnh Ngọc Hân</h4>
+                                <p class="author-desc">Tân Cử nhân ngành Quản trị kinh doanh</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nút CTA lớn cuối Section 6 -->
+                <div class="text-center mt-3xl">
+                    <a href="#register-form" class="btn btn-submit-red btn-cta-large">ĐĂNG KÝ XÉT HỌC BỔNG <i class="fa-solid fa-arrow-right ml-xs" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-simple-grid">
+                <div class="footer-brand">
+                    <img src="brand/logo-truong-2023-09-29.png" alt="UEF Logo" class="footer-logo-img">
+                    <h3 class="footer-school-name">Trường Đại học Kinh tế - Tài chính TP.HCM - UEF</h3>
+                </div>
+                <div class="footer-details">
+                    <p><strong>Trụ sở:</strong> 141 - 145 Điện Biên Phủ, Phường Gia Định, Thành phố Hồ Chí Minh</p>
+                    <p><strong>Cơ sở:</strong> 161 - 161A Điện Biên Phủ, Phường Gia Định, Thành phố Hồ Chí Minh</p>
+                    <p><strong>Hotline:</strong> 028 2236 2222 - 094 998 1717</p>
+                    <p><strong>Email:</strong> <a href="mailto:tuyensinh@uef.edu.vn">tuyensinh@uef.edu.vn</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- VIDEO MODAL (IFRAME) -->
+    <div id="video-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-label="Trình phát video" style="display: none;">
+        <div class="modal-dialog">
+            <div class="modal-header-bar">
+                <div class="modal-nav-group">
+                    <button id="modal-prev-btn" class="modal-nav-btn" aria-label="Video trước"><i class="fa-solid fa-chevron-left" aria-hidden="true"></i> Trước</button>
+                    <span id="modal-counter" class="modal-counter-indicator">1 / 1</span>
+                    <button id="modal-next-btn" class="modal-nav-btn" aria-label="Video sau">Sau <i class="fa-solid fa-chevron-right" aria-hidden="true"></i></button>
+                </div>
+                <button id="modal-close-btn" class="modal-close-btn" aria-label="Đóng video">&times;</button>
+            </div>
+            
+            <div class="modal-iframe-frame" id="modal-iframe-frame">
+                <iframe id="modal-iframe" src="" title="Video Player" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" allowfullscreen></iframe>
+            </div>
+
+            <div class="modal-footer-bar">
+                <a id="modal-fallback-link" href="#" target="_blank" rel="noopener noreferrer" class="modal-fallback-btn">
+                    <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Xem trực tiếp trên nền tảng gốc
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>
